@@ -1,0 +1,122 @@
+.Articles {
+    width: 675px;
+    margin: auto;
+    color: #111111;
+    font-size: 14px;  
+
+    form {
+        @extend .fadeIn;    //@extend 选择器继承
+    }
+
+    textarea {
+        resize: none;
+        height: 5em;
+        width: 99%;
+        color: #111111;
+        font-size: 13px;
+        line-height: 1.5em;
+        font-family: 'Helvetica','Arial','sans-serif';
+        padding: 3px;
+        word-spacing: 2px;
+        outline: none;
+    }
+    ul {
+        padding-inline-start: 0px;
+        margin: 0;
+    }
+    li {
+        position: relative;
+        list-style: none;
+        // border-top: 1px solid #eaeaea;
+        padding: 0.5em 0;
+        &::before {
+            content: "";
+            position: absolute;
+            left: 68px;
+            top: 0px;
+            width: calc(100% - 68px);
+            height: 1px;
+            background-color: #eaeaea;
+        }
+        &:hover {
+            .Articles__title-deleate {
+                visibility: visible;
+            }
+        }
+    }
+    &__headpic {
+        width: 48px;
+        height: 48px;
+        float: left;
+        margin-right: 20px;
+    }
+    &__container {
+        width: 607px;
+        float: none;
+        overflow: hidden;
+        line-height: 1.5em;
+        white-space: pre-wrap;
+    }
+    &__title {
+        // float: none;
+        // overflow: hidden;
+        line-height: normal;
+        h4 {
+            margin: 0 0 10px 4px;
+            font-size: 13px;
+            font-weight: normal;
+        }
+        &-time {
+            font-weight: normal;
+            position: relative;
+            top: 0%;
+            overflow: hidden;
+            margin: 0 0 0 20px;
+            left: 0%;
+            float: none;
+            width: 100px;
+            height: 25px;
+            color: #666;
+        }
+        &-deleate {
+            visibility: collapse;
+            float: right;
+        }
+    }
+    &__creatNew {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        h2 {
+            font-size: 16px;
+            font-weight: normal;
+        }
+        button {
+            height: fit-content;
+        }
+    }
+    &__nextpage{
+        margin: 5%;
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+.fadeIn {
+    -webkit-animation: fadeInDown 1.3s;
+    //定义动画，引用关键帧
+    animation: fadeInDown 1.3s;
+}
+//定义动画关键帧
+@keyframes fadeInDown { 
+    0% {
+        -webkit-transform: translate3d(0, -20%, 0);
+        transform: translate3d(0, -20%, 0);
+        opacity: 0;
+    }
+    100% {
+        -webkit-transform: none;
+        transform: none;
+        opacity: 1;
+    }
+}

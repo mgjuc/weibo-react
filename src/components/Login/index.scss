@@ -1,0 +1,16 @@
+.Login {
+    width: 675px;
+    margin: auto;
+    color: #111111;
+    font-size: 14px;  
+    // padding-left: (675px/2);
+    form {
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    
+}

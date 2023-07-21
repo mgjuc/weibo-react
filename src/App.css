@@ -1,0 +1,8 @@
+
+a:link {color: #37a; text-decoration: none;}
+a:visited {color: #37a; text-decoration: none;}
+a:hover {color: #ffffff; text-decoration: none; background-color: #37a;}
+
+.App {
+    padding-bottom: 80px;
+}

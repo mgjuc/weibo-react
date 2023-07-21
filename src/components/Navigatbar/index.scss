@@ -1,0 +1,52 @@
+
+.NavigatBar {
+    background-color: #e5ebe4;
+    height: 74px;
+    position: relative;
+    &__Ul {
+        height: 30px;
+        width: 300px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 0px;
+        margin: auto;
+        transform: translate(-50%, -50%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        li {
+            display: inline-block;
+        }
+    }
+}
+
+.NavigatBar__Link {
+    font-size: 15px;
+
+    &:link {
+        color: #037b82;
+        text-decoration: none;
+    }
+    &:visited {
+        color: #037b82;
+        text-decoration: none;
+    }
+    &:hover {
+        color: #ffffff;
+        background-color: #037b82;
+    }
+
+
+}
+
+.Alarm {
+    text-align: center;
+    display: inline-block;
+    background-color: #FFC0CB;
+    width: 100%;
+    height: 3em;
+    line-height: 3em;
+    font-size: 16px;
+    color: #111111;
+}
